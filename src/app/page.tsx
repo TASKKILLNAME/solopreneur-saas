@@ -119,36 +119,36 @@ export default function LandingPage() {
             <p className="text-muted-foreground">무료로 시작하고, 필요할 때 업그레이드하세요</p>
           </div>
           <div className="grid gap-6 sm:grid-cols-2 max-w-3xl mx-auto">
-            <div className="rounded-xl border border-border bg-card p-8">
+            <div className="rounded-xl border border-border bg-card p-8 flex flex-col">
               <h3 className="font-bold text-xl mb-1">Free</h3>
               <p className="text-sm text-muted-foreground mb-4">시작하기에 충분한 기능</p>
               <p className="text-4xl font-bold mb-6">₩0<span className="text-base font-normal text-muted-foreground">/월</span></p>
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-8 flex-grow">
                 {["고객 10명까지", "프로젝트 5개까지", "기본 청구서", "시간 추적", "수입/지출 관리"].map((item) => (
                   <li key={item} className="flex items-center gap-2 text-sm">
                     <Check className="h-4 w-4 text-green-500 shrink-0" /> {item}
                   </li>
                 ))}
               </ul>
-              <Link href="/signup" className="inline-flex h-10 w-full items-center justify-center rounded-md border border-input text-sm font-medium hover:bg-accent transition-colors">
+              <Link href="/signup" className="inline-flex h-10 w-full items-center justify-center rounded-md border border-input text-sm font-medium hover:bg-accent transition-colors mt-auto">
                 무료로 시작
               </Link>
             </div>
-            <div className="rounded-xl border-2 border-primary bg-card p-8 relative">
+            <div className="rounded-xl border-2 border-primary bg-card p-8 relative flex flex-col">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-xs font-medium px-3 py-1 rounded-full">
                 추천
               </div>
               <h3 className="font-bold text-xl mb-1">Pro</h3>
               <p className="text-sm text-muted-foreground mb-4">성장하는 비즈니스를 위한</p>
               <p className="text-4xl font-bold mb-6">₩19,900<span className="text-base font-normal text-muted-foreground">/월</span></p>
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-8 flex-grow">
                 {["무제한 고객", "무제한 프로젝트", "PDF 청구서 + 자동 번호", "상세 리포트", "우선 지원", "데이터 내보내기"].map((item) => (
                   <li key={item} className="flex items-center gap-2 text-sm">
                     <Check className="h-4 w-4 text-green-500 shrink-0" /> {item}
                   </li>
                 ))}
               </ul>
-              <Link href="/signup" className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-colors">
+              <Link href="/signup" className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-colors mt-auto">
                 Pro 시작하기
               </Link>
             </div>
