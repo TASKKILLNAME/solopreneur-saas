@@ -30,11 +30,13 @@ export function Header() {
   }
 
   return (
-    <header className="sticky top-0 z-40 flex h-14 items-center gap-4 border-b border-border bg-card/80 backdrop-blur-sm px-4 lg:px-6">
+    <header className="sticky top-0 z-50 flex h-14 items-center gap-4 border-b border-border bg-card/80 backdrop-blur-sm px-4 lg:px-6">
       <MobileNav />
       <div className="flex-1" />
-      <ThemeToggle />
-      <div className="relative" ref={menuRef}>
+      <div className="flex items-center gap-2 relative z-50">
+        <ThemeToggle />
+      </div>
+      <div className="relative z-50" ref={menuRef}>
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-muted hover:bg-accent transition-colors"
@@ -43,7 +45,7 @@ export function Header() {
           <User className="h-4 w-4" />
         </button>
         {menuOpen && (
-          <div className="absolute right-0 top-full mt-2 w-48 rounded-md border border-border bg-card shadow-lg py-1 z-50">
+          <div className="absolute right-0 top-full mt-2 w-48 rounded-md border border-border bg-card shadow-lg py-1 z-[60]">
             <button
               onClick={() => {
                 setMenuOpen(false)

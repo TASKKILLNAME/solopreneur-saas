@@ -21,10 +21,10 @@ export function MobileNav() {
       {open && (
         <>
           <div
-            className="fixed inset-0 z-50 bg-black/50 lg:hidden"
+            className="fixed inset-0 z-[60] bg-black/50 lg:hidden"
             onClick={() => setOpen(false)}
           />
-          <div className="fixed inset-y-0 left-0 z-50 w-72 bg-card border-r border-border lg:hidden overflow-y-auto">
+          <div className="fixed inset-y-0 left-0 z-[60] w-72 bg-card border-r border-border lg:hidden overflow-y-auto">
             <div className="flex h-14 items-center justify-between border-b border-border px-6">
               <Link href="/dashboard" className="flex items-center gap-2 font-bold text-lg" onClick={() => setOpen(false)}>
                 <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
