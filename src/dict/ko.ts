@@ -69,6 +69,8 @@ export const ko = {
     editClient: "고객 수정",
     deleteConfirm: "이 고객을 삭제하시겠습니까?",
     noClients: "등록된 고객이 없습니다",
+    emptyGuide: "고객을 등록하면 프로젝트와 청구서를 연결할 수 있습니다.",
+    emptyAction: "첫 번째 고객 등록하기",
   },
   projects: {
     title: "프로젝트",
@@ -83,6 +85,8 @@ export const ko = {
     tasks: "태스크",
     addTask: "태스크 추가",
     noProjects: "등록된 프로젝트가 없습니다",
+    emptyGuide: "프로젝트를 만들고 시간 추적, 청구서 발행을 시작하세요.",
+    emptyAction: "첫 번째 프로젝트 만들기",
   },
   invoices: {
     title: "청구서",
@@ -102,6 +106,9 @@ export const ko = {
     markAsSent: "발송 처리",
     markAsPaid: "결제 완료",
     noInvoices: "등록된 청구서가 없습니다",
+    emptyGuide: "고객에게 청구서를 발행하고 결제 상태를 추적하세요.",
+    emptyAction: "첫 번째 청구서 만들기",
+    needClient: "청구서를 만들려면 먼저 고객을 등록해주세요.",
   },
   timeTracking: {
     title: "시간 추적",
@@ -114,6 +121,8 @@ export const ko = {
     weeklySummary: "주간 요약",
     totalHours: "총 근무시간",
     noEntries: "기록된 시간이 없습니다",
+    emptyGuide: "프로젝트를 선택하고 타이머를 시작해서 작업 시간을 기록하세요.",
+    needProject: "시간을 기록하려면 먼저 프로젝트를 만들어주세요.",
   },
   finances: {
     title: "수입/지출",

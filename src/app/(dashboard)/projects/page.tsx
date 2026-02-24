@@ -39,9 +39,19 @@ export default async function ProjectsPage({ searchParams }: { searchParams: Pro
       </div>
 
       {(!projects || projects.length === 0) ? (
-        <div className="text-center py-12 text-muted-foreground">
-          <FolderKanban className="mx-auto h-12 w-12 mb-4 opacity-50" />
-          <p>{ko.projects.noProjects}</p>
+        <div className="text-center py-16">
+          <div className="mx-auto h-16 w-16 rounded-full bg-muted flex items-center justify-center mb-4">
+            <FolderKanban className="h-8 w-8 text-muted-foreground" />
+          </div>
+          <h3 className="font-semibold text-lg mb-2">{ko.projects.noProjects}</h3>
+          <p className="text-muted-foreground mb-6 max-w-sm mx-auto">{ko.projects.emptyGuide}</p>
+          <Link
+            href="/projects/new"
+            className="inline-flex h-10 items-center gap-2 rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
+          >
+            <Plus className="h-4 w-4" />
+            {ko.projects.emptyAction}
+          </Link>
         </div>
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
